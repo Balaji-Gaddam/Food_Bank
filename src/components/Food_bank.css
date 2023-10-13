@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Courgette&family=Creepster&family=Eczar:wght@400;500&family=Moon+Dance&family=Neuton:ital,wght@0,200;1,400&family=PT+Serif&family=Patua+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Rubik+Wet+Paint&display=swap');
+
+
+*{
+    padding:0;
+    margin: 0px;
+    box-sizing: border-box;
+    background-color:#A2A2B2 0.7;
+    font-family: Poppins;
+}
+.Main_card{
+    display:flex;
+    flex-wrap:wrap;
+    gap: 3rem;
+    margin-top: 3rem;
+    margin-left: 6rem;
+}
+.Food_card {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: auto;
+    position: relative;
+    transition: transform 0.3s;
+    cursor: pointer;
+    background-color: #FBFBFB;
+    margin-top: 3rem;
+}
+.Food_card img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0px 0px;
+}
+.Food_card:hover{
+    cursor: pointer;
+    transform:scale(1.2);
+}
+.Food_card button{
+    width: 6rem;
+    height: 2rem;
+    margin: 0.5rem;
+    background-color: #222347;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+.Food_card h4{
+    margin: 0.5rem;
+    background-color:none;
+}
+.Card_button{
+    display: flex;
+    justify-content: space-between;
+    
+}
+#fav_button button{
+    width:7rem;
+    padding: 2px;
+    cursor: pointer;
+}
+#detail_bbutton{
+    cursor: pointer;
+}
+.addto_fav button i{
+    color: red;
+    margin-right: 5px;
+   
+}
+.addto_fav button{
+    cursor: pointer;
+}
+.button_div{
+    display: flex;
+    
+}
+.nav_div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin: 2.5rem 3rem 2rem 2rem;
+}
+.nav_div a{
+    text-decoration: none;
+    color: #222347;
+   
+}
+.SearchInput{
+    display: flex;
+    border:2px solid #222347;
+    border-radius: 0px 6.3px 6.3px 0px;
+}
+.heading{
+    margin: 1rem 3rem 2rem 2rem;
+}
+.SearchInput input{
+    width:20rem;
+    height: 2rem;
+    font-size: 0.9rem;
+    outline: none;
+    border-radius: 5px 0px 0px 5px;
+    padding-left: 10px;
+    border:none;
+}
+.SearchInput .wrong{
+    background-color: #222347;
+    display: flex;
+    align-items: center;
+    width:2rem;
+    border-radius:0px 5px 5px 0px;
+    color: white;
+    padding-left: 0.5rem;
+    cursor: pointer
+}
+.SearchInput .search{
+    display: flex;
+    align-items: center;
+    padding-left: 0.5rem;
+    opacity: 0.6;
+}
+.main_home{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+}
+.main_home .home_img{
+    width:50%;
+}
+.main_home .home_text{
+    width: 50%;
+}
+.main_home .home_img img{
+    width:100%;
+}
+.home_text{
+    margin-left: 3rem;
+}
+.home_text h1{
+    font-size: 6rem;
+}
+.home_text p{
+    font-size: 1rem;
+    color: orangered ;
+    opacity: 0.7;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    margin: 4rem 1rem 2rem;
+    gap:3rem;
+}
+
+.content .Recipe_img{
+    width: 40%;
+    margin-left: 3rem;
+    border-radius: 6rem;
+}
+.content .Recipe_Discription{
+    width: 50%;
+    margin-bottom: 2rem;
+}
+.content .Recipe_Discription h1,p,a{
+    margin-bottom: 1rem;
+    text-decoration: none;
+}
+.content .Recipe_Discription button{
+    border: none;
+    color:white;
+    background-color: #222347;
+    width:8rem;
+    height: 3rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.content .Recipe_Discription a{
+    color: white;
+}
+.content .Recipe_Discription button:hover{
+    background-color: crimson;
+    transition: ease 0.5s;
+}
+
+
+
+@media  screen and (max-width:769px) {
+    *{padding:0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+    .Main_card{
+        display:flex;
+        flex-direction: column;
+        margin:0px 0.5rem 0px 1rem;
+    }
+    .Food_card {
+        width: 100%;
+        height: auto;
+        margin-top: 1rem;
+    }
+    .nav_div{
+        display: flex;
+        flex-direction: column;
+        margin: 2.5rem 3rem 2rem 2rem;
+    }
+    .SearchInput input{
+        width:15rem;
+        padding: 0px;
+        margin: 0px;
+    }
+    .main_home{
+        display: flex;
+        flex-direction: column;
+        align-items: normal;
+        margin-left: 0px;
+        padding: 0px;
+    }
+    .home_text{
+        margin-left: 2rem;
+    }
+    .home_text h1{
+        font-size: 5rem;
+    }
+    .home_text p{
+        font-size: 0.8rem;
+    }
+    .main_home .home_img{
+        width:100%;
+    }
+    .main_home .home_text{
+        width: 80%;
+    }
+    .Food_card:hover{
+        cursor: pointer;
+        transform:none;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        margin: 0;
+        padding: 0px;
+        gap:0rem;
+        margin-top: 0rem;
+    }
+    .content .Recipe_img{
+        margin-top: 3rem;
+        width: 80%;
+        margin-left: 0rem;
+        border-radius: 0rem;
+    }
+    .content .Recipe_Discription{
+        width: 80%;
+        margin-bottom: 1.5rem;
+        text-align: justify;
+        margin: 1rem;
+    }
+    .content .Recipe_Discription h1,p,a{
+        margin-bottom: 0.5rem;
+        text-decoration: none;
+    }
+    .content .Recipe_Discription h1{
+        font-size: 1rem;
+    }
+
+}
